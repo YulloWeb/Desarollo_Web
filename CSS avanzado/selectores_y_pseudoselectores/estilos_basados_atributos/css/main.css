@@ -1,0 +1,48 @@
+#contenedor{
+    border: 1px solid #219652;
+    margin: 10px auto;
+    width: 300px;
+    height: 400px;
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,.02), 0 6px 20px 0 rgba(1,1,1,0.2);
+}
+/*
+    Atributos 
+*/
+
+abbr[title]{
+    border-bottom: 1px dotted #CCC;
+    color: red;
+    cursor: help;
+}
+
+span[data-twitter]{
+    color: blue;
+}
+
+input[type="text"]{
+    width: 200px;
+    margin: 5px 0;
+}
+
+input[type="submit"]{
+    margin: 10px 0;
+}
+
+input[type="text"][disabled]{
+    border: 5px dotted Lightgreen;
+    background-color: #CCC;
+}
+
+/*
+    a[href ^= http] = Que inicie con
+    a[href *= http] = Que contenga con
+    a[href $= .com] = Que termine con
+
+*/
+a[href^=http]{
+    width: 1px;
+    padding-left: 20px;
+    background: url(../1418752068117416363.jpg) left no-repeat;
+}

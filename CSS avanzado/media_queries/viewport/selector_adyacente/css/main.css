@@ -1,0 +1,29 @@
+span{
+    font-weight: bold;
+    font-size: 20px;
+    text-shadow: 2px 2px rgba(0,0,0,0.4);
+}
+
+/*
+    Selector Adyacente
+    son elemtos que estan imediatamente contiguo de otro elemento 
+*/
+
+/*
+h1 + p{
+    background-color: #F5FFB3;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #CCC;
+}
+*/
+/*
+    ~ = Aplicara a todos los parrafos que esten despues del h1
+*/
+
+h1 ~ p{
+    background-color: #F5FFB3;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #CCC;    
+}

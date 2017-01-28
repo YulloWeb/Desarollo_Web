@@ -1,0 +1,25 @@
+#contenedor{
+    background-color: LightGreen;
+    padding-top: 80px;
+    margin: 100px auto;
+    width: 300px;
+    height: 100px;
+    text-align: center;
+    font-weight: bold;
+    /*Border redondeado*/
+    /*border-radius: 10px;*/
+    /*
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 50px;
+    border-top-left-radius: 20px;
+    */
+    /*
+    border-radius: 10px 20px 30px 40px;
+    */
+    
+    /**Border eleptico*/
+    /*border-radius: 50%;*/
+    
+    border-radius: 15px / 50px;
+}

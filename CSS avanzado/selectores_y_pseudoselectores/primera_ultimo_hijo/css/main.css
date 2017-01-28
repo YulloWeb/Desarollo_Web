@@ -1,0 +1,24 @@
+#contenedor{
+    border: 1px solid #219652;
+    margin: 10px auto;
+    width: 300px;
+    height: 600px;
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,.02), 0 6px 20px 0 rgba(1,1,1,0.2);
+}
+
+/*Primer hojo y ultimo hijo*/
+li:first-child, li:last-child{
+    font-weight: bold;
+    font-size: 20px;
+    color: #219652;
+}
+
+/*Más especifico*/
+
+ul:first-of-type, ul:last-of-type{
+    background-color: #DDD4D4;
+    border-radius: 10px;
+    padding: 10px;
+}

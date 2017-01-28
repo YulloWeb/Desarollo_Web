@@ -1,0 +1,30 @@
+#contenedor{
+    border: 1px solid #219652;
+    margin: 10px auto;
+    width: 300px;
+    height: 400px;
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,.02), 0 6px 20px 0 rgba(1,1,1,0.2);
+}
+
+/*
+    Cambiar el estilo cuando cambie de estado el checkbok
+*/
+
+input[type="checkbox"] + label{
+    /*color: #4F7584;*/
+}
+
+input[type="checkbox"]:checked + label{
+    color: #E60000;
+    text-shadow: 1px 2px 3px #219652;
+}
+
+input:disabled + label{
+    color: green;
+}
+
+input:enabled + label{
+    color: blue;
+}

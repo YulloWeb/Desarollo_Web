@@ -1,0 +1,27 @@
+/*
+    Selector hijo
+    Son aquellos que dependen directamente de otro elemento, por ejemplo 
+    
+    A es el padre
+    B es el hijo
+    C es el nieto
+    
+    B depende de A pero C no depende de A, entonces C depende de B 
+    
+*/
+
+#to_dos > li{
+    border: 1px solid #219652;
+    margin: 10px;
+    width: 300px;
+    padding: 5px;
+    list-style: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+#to_dos >li li:hover{
+    background-color: #D4D4D4;
+    padding: 3px;
+    border-radius: 3px;
+}

@@ -1,0 +1,30 @@
+#contenedor{
+    border: 1px solid #219652;
+    margin: 10px auto;
+    width: 300px;
+    height: 400px;
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,.02), 0 6px 20px 0 rgba(1,1,1,0.2);
+}
+
+/*
+    Los pseudoselectores se identifican con dov veces dos puntos = ::
+*/
+#contenedor::before{
+    content: "Contenido antes del div";
+}
+
+#contenedor::after{
+    content: "Contenido después del div";
+}
+
+a::before{
+    /*siempre debe ir, aunque no tenga contenido
+    attr = Direcciona al micro-dato que se encuentra en el HTML
+    */
+    content: "el " attr(data-nombre) " ";
+    padding-left: 20px;
+    background: url(../images.png) left center no-repeat ;
+}
+

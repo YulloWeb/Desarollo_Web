@@ -1,0 +1,32 @@
+#contenedor{
+    background-color: LightGreen;
+    padding-top: 80px;
+    margin: 100px auto;
+    width: 300px;
+    height: 100px;
+    text-align: center;
+    font-weight: bold;
+    
+    /*Sombra de caja*/
+    /*
+        Parametros, box-shadow
+        1.- Sombra horizontal
+        2.- Sombra vertical
+        3.- Blur(Desenfoque)
+        4.- tamaño de la sombra
+        5.- Color
+        6.- Tipo de incrustado (inset,outset)
+    */
+    box-shadow: 10px 10px 5px 0px #E60000 inset;
+    
+    /*Sombra de texto*/
+    /*
+        Parametros, text-shadow
+        1.- Sombra horizontal
+        2.- Sombra vertical
+        3.- Blur(Desenfoque)
+        4.- Color
+    */
+    text-shadow: 10px 5px 3px #000;
+    
+}

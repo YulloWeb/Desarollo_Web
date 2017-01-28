@@ -1,0 +1,24 @@
+#contenedor{
+    background-color: LightGreen;
+    padding-top: 80px;
+    margin: 100px auto;
+    width: 300px;
+    height: 100px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    /*Hexadecimal*/
+    /*color:#FF0000;*/
+    
+    /*RGB*/
+    /*color: rgb(242,0,46);*/
+    
+    /*RGBA*/
+    /*color: rgba(242,0,42,0.5);*/
+    
+    /*HSL*/
+    /*color: hsl(120,50%,50%);*/
+    
+    /*HSLA*/
+    color: hsla(120,50%,50%,0.7);
+}

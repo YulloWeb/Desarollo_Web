@@ -1,0 +1,74 @@
+#contenedor{
+    background-color: LightGreen;
+    margin: 100px auto;
+    width: 300px;
+    height: 300px;
+    text-align: center;
+    font-weight: bold;
+    /*
+        Flexbox
+    */
+    display: flex;
+    
+    /*Dirección de los elementos*/
+    /*flex-direction: row;*/
+    /*flex-direction: row-reverse;*/
+    /*flex-direction: column;*/
+    /*flex-direction: column-reverse;*/
+    /*flex-direction: row;*/
+    
+    /*Agrupacion de elementos*/
+    /*flex-wrap: wrap;*/
+    
+    /*Anotación acortada
+        Parametros
+        1.- Direccion
+        2.- Agrupacion
+    */
+    
+    flex-flow: row wrap;
+    
+    /*Acomodar contenido horizontal*/
+    /*Centrado*/
+    /*justify-content: center;*/
+    /*Final del componenete*/
+    /*justify-content: flex-end;*/
+    /*Incio del componente*/
+    /*justify-content: flex-start;*/
+    /*Distribución automática*/
+    /*justify-content: space-between*/
+    /*justify-content: space-around;*/
+    justify-content: center;
+    
+    /*Acomodar contenido vertical*/
+    align-items: center;
+    
+    /*Acomoda vertica y horizaontal*/
+    align-content: space-around;
+}
+
+.item{
+
+    padding-top: 20px;
+    width: 80px;
+    height: 40px;
+    background-color: darkorange;
+    /*margin: 10px 10px;*/
+    /*Hacer mas grande o pequeño el elemento*/
+    flex-grow: 0.4;
+    /*Orden del elmento*/
+    order: 3;
+    
+    
+}
+.item2{
+    /*Alineación independiente vertical*/
+    align-self: flex-end;
+    /*Orden del elmento*/
+    order: 1;
+}
+
+.item3{
+    /*Orden del elmento*/
+    order: 2;
+}

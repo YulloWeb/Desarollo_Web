@@ -1,0 +1,13 @@
+/*Estilos para un dispositivo especifico*/
+
+@media all and (min-device-height: 400px) and (max-device-height: 600px){
+    body{
+        background-color: lightgray;
+    }
+    
+    .contenido{
+        font-family: Arial, sans-serif;
+        font-size: 18px;
+        text-shadow: 1px -4px 10px #99CC00;
+    }
+}

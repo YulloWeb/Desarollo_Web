@@ -1,0 +1,53 @@
+/*
+    @import = Importa CSS
+*/
+@import url(general.css);
+
+/*
+    @font-face = Importa fuentes
+*/
+@font-face {
+    font-family:"Roboto";
+    src: url("../font/Roboto-Bold.ttf");
+    font-weight: 700;
+    font-style: normal;
+}
+
+/*
+    @media = Media Queries
+    Parametros 
+    1.- print
+    2.- screen
+    3.- projection
+    4.- handheld
+*/
+
+@media print{
+    body{
+        font-size: 10pt;
+        font-family: times, serif;
+    }
+    
+    #contenedor{
+        -webkit-column-count: 2;
+        border: none-,
+    }
+}
+
+#contenedor{
+    background-color: LightGreen;
+    align-items: center;
+    border-radius: 15px;
+    border: 8px solid #CCC;
+    padding: 40px;
+    margin: 100px auto;
+    width: 300px;
+    height: 500px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+h1{
+    font-family: "Roboto";
+    text-transform: uppercase;
+}

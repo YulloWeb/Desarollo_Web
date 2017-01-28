@@ -1,0 +1,25 @@
+/*Selector universal
+    Afecta a todos los elementos de una página
+    Simbolo *
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#contenedor{
+    border-radius: 15px;
+    width: 90%;
+    height: 150px;
+    font-weight: bold;
+    font-size: 36px;
+}
+
+.contact{
+    width: 300px;
+    box-shadow: 0 4px 8 px rgba(0,0,0,0.2);
+    text-align: center;
+    background-color: #A3D1B8;
+    margin: 20px;
+}

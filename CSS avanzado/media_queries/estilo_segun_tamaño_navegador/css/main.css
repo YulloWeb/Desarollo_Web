@@ -1,0 +1,51 @@
+#contenedor{
+    border: 1px solid #219652;
+    margin: 10px auto;
+    width: 300px;
+    height: 600px;
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,.02), 0 6px 20px 0 rgba(1,1,1,0.2);
+}
+
+/*
+    Media Queries
+    
+    Operadores 
+        1.- NOT
+        2.- AND
+        3.- ONLY
+
+    Parametros @media
+    1.- Dispositivo 
+        all = Todos los dispositivos
+    2.- Ancho minimo
+    3.- Ancho maximo
+*/
+
+@media all and (min-width: 1001px){
+    body{
+        background-color: #83D68F;
+        color: white;
+    }
+}
+
+@media all and (max-width: 1000px) and (min-width: 700px){
+    .contenido{
+       display: none;
+    }
+    body{
+        background-color: #78BDBA;
+        color: white;
+    }
+}
+
+@media all and (max-width: 699px) and (min-width: 10px), (min-width: 1200px){
+    .contenido{
+        font-family: Arial, sans-serif;
+        font-size: 24px;
+    }
+    body{
+        background-color: #E08D52;
+    }
+}

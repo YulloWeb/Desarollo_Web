@@ -1,0 +1,95 @@
+@import url(desktop.css);
+@import url(tablet.css);
+@import url(smartphone.css);
+@import url(mydevice.css);
+#contenedor{
+    border: 1px solid #219652;
+    margin: 10px auto;
+    width: 300px;
+    height: 600px;
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,.02), 0 6px 20px 0 rgba(1,1,1,0.2);
+}
+
+/*
+    1dppx (hardware) es igual a 96dpi (navegador web)
+    
+    ---------
+    dppx más comunes:
+    1 - Gama baja
+    1.3, 1.325, 1.5, 1.6667 2 - iPhone6, Apple y gama meida y alta
+    2 - iPhone 6plus
+    3 - Galaxy serie s4 y s5
+    4 - Galaxy s6 
+
+    Rangos dpi 
+    1dppx -> 96dpi
+    2dppx -> 177dpi
+    3dppx -> 249dpi
+    4dppx -> 384pi
+    
+
+*/
+/*
+    Resolution
+    Parametros:
+    1.- dppx (Punto por pixel)
+    2.- dpi (punto por pulgada)
+    3.- (punto por centimetro)
+*/
+@media (min-resolution: 1dppx) and (min-resolution: 96dpi){
+    .contenido::before{
+        content: "--> Rango de 1dppx";
+        font-weight: bold;
+        font-size: 20px;
+    }
+    
+    .contenido{
+        background-color: snow;
+        color: black;
+        padding: 10px;
+    }
+}
+
+@media (min-resolution: 2dppx) and (min-resolution: 177dpi){
+    .contenido::before{
+        content: "--> Rango de 2dppx";
+        font-weight: bold;
+        font-size: 20px;
+    }
+    
+    .contenido{
+        background-color: lightblue;
+        color: black;
+        padding: 10px;
+    }
+}
+
+@media (min-resolution: 3dppx) and (min-resolution: 249dpi){
+    .contenido::before{
+        content: "--> Rango de 3dppx";
+        font-weight: bold;
+        font-size: 20px;
+    }
+    
+    .contenido{
+        background-color: lightgreen;
+        color: black;
+        padding: 10px;
+    }
+}
+
+@media (min-resolution: 4dppx) and (min-resolution: 384dpi){
+    .contenido::before{
+        content: "--> Rango de 4dppx";
+        font-weight: bold;
+        font-size: 20px;
+    }
+    
+    .contenido{
+        background-color: olivedrab;
+        color: black;
+        padding: 10px;
+    }
+}
