@@ -1,0 +1,10 @@
+#contenedor{
+    widows: 80%;
+    height: 150px;
+    background-color: #BED7FF;
+    border:8px solid rgba(255,0,0,.5);
+    background-image: url(../img/images.png), url(../img/io16-social.jpg);
+    background-position: left center, right center;
+    background-repeat: no-repeat,repeat-x;
+    background-size: contain,25%;
+}

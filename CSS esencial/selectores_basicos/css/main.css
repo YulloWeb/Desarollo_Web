@@ -1,0 +1,47 @@
+/*SELECTOR DE TIPO ELEMENTO*/
+h1{
+    width: 100%;
+    padding: 30px 0px;
+    background: rgb(70,70,70);
+    color: white;
+    float: top;
+}
+
+/*SELECTOR DE CLASE*/
+.clase{
+    width: 32%;
+    height: 290px;
+    float: left;
+    background: #F00;
+}
+
+/*SELECTOR DE ID*/
+#identificador{
+    width: 80%;
+    min-width: 800px;
+    margin: 0px auto;
+    float: right;
+}
+
+/*SELECTOR ESPECÍFICO*/
+h1#especifico{
+    background: blue;
+    float: right;
+}
+
+div h1 {
+    height: 70px;
+    margin-bottom: 10px;
+    padding: 10px 10px 10px 30%;
+    background: rgb(255,85,70) no-repeat 5% center;
+    float: left;
+}
+
+/*SELECTOR AGRUPADO*/
+h1#agrupado, p{
+    width: 80%;
+    margin: 0px auto;
+    min-width: 800px;
+    background: green;
+    float: right;
+}
