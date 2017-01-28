@@ -1,0 +1,19 @@
+
+#content {
+    width: 80%;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: lightcoral;
+}
+
+#bloque_dcha {
+    display: inline-block;
+    width: 40%;
+    
+}
+
+#bloque_izqueda {
+    display: inline-block;
+    width: 40%;
+    
+}

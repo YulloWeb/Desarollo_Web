@@ -1,0 +1,13 @@
+nav ul{
+    padding: 0px;
+    list-style: none;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: red;
+}
+
+nav#horizontal ul li{
+    display: inline-block;
+}

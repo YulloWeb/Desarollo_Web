@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Formularios</title>
+</head>
+<body>
+    <h1>Ménus desplegables</h1>
+    
+    <section>
+       <!--
+           action = Hace referencia a un servidor, por ejemplo, PHP
+           method = Tipo de envio (GET o POST)
+       -->
+        <form action="" method="">
+            <!--
+                Combobox
+            -->
+            <label for="paises">Paises</label>
+            <select multiple name="paises" id="">
+              <!--
+                  optgroup = Opciones en grupo
+              -->
+               <optgroup label="Europa">
+                 <option value="es">España</option>
+                <option value="fr">Francia</option>  
+               </optgroup>
+               <optgroup label="America">
+                    <option value="mx" selected>México</option>
+                    <option value="ar">Argentina</option>
+               </optgroup>
+                
+                
+            </select>
+        </form>
+    </section>
+</body>
+</html>

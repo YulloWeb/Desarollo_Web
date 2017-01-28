@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Formularios</title>
+</head>
+<body>
+    <h1>Tipos de input </h1>
+    
+    <section>
+       <!--
+           action = Hace referencia a un servidor, por ejemplo, PHP
+           method = Tipo de envio (GET o POST)
+       -->
+        <form action="" method="">
+          <!--
+              Texto
+          -->
+          <label for="">Texto</label>
+          <input type="text">
+          <!--
+              Numerico
+          -->
+          <label for="Númerico"></label>
+          <input type="number" min="6" max="10" step="2" value="6">
+          
+          <!--
+              Rango
+          -->
+        </form>
+        <label for="">Rango</label>
+        <input type="range" min="1" max="20" step="2" value="1">
+        
+        <!-
+            Fecha
+        --->
+        <label for="">Fechas</label>
+        <input type="date">
+        <input type="month">
+        <input type="week">
+        <input type="datetime">
+        <input type="datetime-local">
+        <input type="time">
+        
+        <!--
+            URL
+        -->
+        <label for="">URL</label>
+        <input type="url">
+        <!--
+            Email
+        -->
+        <label for="">Email</label>
+        <input type="email">
+        
+         <!--
+             Archivos
+         -->
+         <label for="">Archivo</label>
+         <input type="file" accept="application/pdf">
+        
+        <!--
+            Oculto
+        -->
+        <input type="hidden" name="sitio" value="Contaminación">
+    </section>
+</body>
+</html>

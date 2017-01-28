@@ -1,0 +1,19 @@
+table{
+    border-collapse: collapse;
+    width: 80%;
+    margin: 0 auto;
+    background-color: lightcoral;
+    color: white;
+}
+
+table, td, th {
+    border: 2px solid white;
+    text-align: center;
+}
+td {
+    background-color: lightgreen;
+}
+td, th{
+    padding: 3px 15px;
+}
+
