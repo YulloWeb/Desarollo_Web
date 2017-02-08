@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Pop-up</title>
+
+<script type="text/javascript">
+function recibirMensaje(mensaje) {
+	document.getElementById("mensaje").innerHTML = mensaje;
+}
+</script>
+</head>
+
+
+
+<body>
+<p>Esto es una ventana nueva</p>
+
+<input type="button" onclick="opener.recibirMensaje('Mensaje desde el popup')" value="Comunicacion con ventana principal"  />
+<p><a href="javascript:window.close()">Cerrar</a></p>
+<p id="mensaje"></p>
+</body>
+</html>

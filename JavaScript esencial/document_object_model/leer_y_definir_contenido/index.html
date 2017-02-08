@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM</title>
+    
+    <style type="text/css">
+        #estado{
+            display: none;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            padding: 5px;
+            background-color: yellow;
+            color: red;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Leyendo y definiendo contenido</h1>
+    
+    <a href="javascript:llenarContenedor()">Llenar contenedor</a>
+    <div id="contenedor"></div>
+    <div id="estado">
+    </div>
+    <br>
+    <input type="button" onclick="alertar('Ha ocurrido un problema')" value="Generar problema">
+    <br><br>
+    <a href="javascript:alertar('Ha generado un mensaje desde el link')">Generar mensaje</a>
+    <script src="js/main.js"></script>
+</body>
+</html>
