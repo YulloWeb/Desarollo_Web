@@ -1,0 +1,18 @@
+/***** Cambios y mejoras PHP7 *****/
+
+-- Mejora en rendimiento y velocidad 
+-- Sintaxis tipo Java y C (type hints)
+-- Arreglos constatntes 
+
+/*** Funciones nuevas ***/
+-- Closure::call()
+-- intdiv()
+-- preg_replace_callback_array()
+-- random_bytes() 
+-- random_int()
+
+/*** Comportamientos nuevos ***/
+-- List con objetos ArrayAccess
+-- Filtros para unserialize()
+-- USE agrupados 
+-- Opciones de sesión en tiempo de ejecución

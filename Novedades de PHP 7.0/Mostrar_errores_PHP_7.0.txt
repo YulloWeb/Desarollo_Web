@@ -1,0 +1,18 @@
+/*** Mostrar errores en PHP 7.0 ***/
+
+//Abrir el archivo 
+sudo nano /etc/php/7.0/apache2/php.ini
+
+//Descomentar las siguientes sentencias 
+
+display_errors
+   Default Value: On
+
+ error_reporting
+   Default Value: E_ALL & ~E_NOTICE & ~E_STRICT & ~E_DEPRECATED
+
+ html_errors
+   Default Value: On
+
+//Reiniciar el servidor 
+sudo nano /etc/init.d/apache2 restart
