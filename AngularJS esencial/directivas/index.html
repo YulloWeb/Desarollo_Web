@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="es" ng-app>
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js">
+            
+        </script>
+    </head>
+    <body ng-controller="controlador">
+        <h1>Directivas</h1>
+        <!-- Las directivas permiten controlar o modificar un documento HTML-->
+        <div ng-show="true">
+            Las directivas en AngularJS son sencillas de usar
+        </div>
+        <button ng-click="controladorBoton()" ng-show="false">
+            Presiona aqui si te gustan las directivas
+        </button>
+    </body>
+</html>

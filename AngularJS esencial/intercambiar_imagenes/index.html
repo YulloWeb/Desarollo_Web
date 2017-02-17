@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es" data-ng-app="app">
+    <head>
+        <title>Intercambiar imagenes</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js">
+            
+        </script>
+    </head>
+    <body>  
+        <div data-ng-controller="controlador01">
+            <img alt="imagen01" width="800px" data-ng-src="{{ imagenActual }}">
+
+            <br>
+            <button data-ng-click="mostrarImagen('img/imagen01.jpg')"> Imagen 1 </button>
+            <button data-ng-click="mostrarImagen('img/imagen03.jpg')"> Imagen 2 </button>
+        </div>
+        <script>
+            var miApp = angular.module('app',[]);
+            miApp.controller('controlador01',['$scope',function($scope){
+                $scope.imagenActual = "img/imagen01.jpg";
+                $scope.mostrarImagen = function( _img){
+                    $scope.imagenActual = _img;
+                };
+            }]);
+        </script>
+    </body>
+</html>

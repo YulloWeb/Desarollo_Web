@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es" data-ng-app="accion">
+    <head>
+        <title>Administración de eventos</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js">
+            
+        </script>
+    </head>
+    <body>
+        <div data-ng-controller="controlador01">
+            <button data-ng-click="clickSimple()">Click</button>
+            <button data-ng-dblclick="clickDoble()"> Doble click </button>
+
+            <h1>{{ evento }}</h1>
+        </div>
+
+        <script>
+            var miAplicacion = angular.module('accion',[]);
+            miAplicacion.controller('controlador01', ['$scope', function($scope){
+
+                $scope.clickSimple = function(){
+                    $scope.evento = "Click del boton";
+                };
+
+                $scope.clickDoble= function(){
+                    $scope.evento = "Click doble del boton";
+                };
+            }]);
+        </script>
+    </body>
+</html>

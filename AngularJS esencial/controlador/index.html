@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es" data-ng-app="tiendaDeFruta">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js">
+            
+        </script>
+    </head>
+    <body>
+        <!-- En AngularJS, un controlador procesa la información -->
+        <!-- 
+            Pasos para crear un controlador 
+            
+            1.- Definir el nombre de la aplicación
+            2.- Definir una variable que hace referencia a el nombre de la aplicación
+            3.- Declarar el controlador
+        -->
+        <div data-ng-controller="controlador01">
+            <h1>¡Promoción de mangos!</h1>
+            <h2>$2.15 cada uno</h2>
+
+            <label for="cantidadMangos"> Cantidad de mangos: </label>
+            <input type="text" name="cantidadMangos"  data-ng-model="cantidadMangos">
+            
+            <br />
+            Precio Total: {{ cantidadMangos * precio | currency}}
+        </div>
+
+        <script>
+            //2.- Definir Variable
+            var miAplicacion = angular.module("tiendaDeFruta",[]);
+
+            //3.- Declarar el controlador
+            //$sope = Sirve para acceder a la informacion de un elemento 
+            //        de HTML o del mismo controlador
+            miAplicacion.controller("controlador01", [ '$scope', function($scope){
+                //Código para el controlador
+                $scope.cantidadMangos = 1;
+                $scope.precio = 2.15;
+            } ]);
+        </script>
+    </body>
+</html>

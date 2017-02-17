@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es" data-ng-app="nombreApp">
+    <head>
+        <title>Multiples controladores</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js">
+            
+        </script>
+    </head>
+    <body>
+        <div data-ng-controller="controlador01">
+            Nombre: {{ nombre }}
+        </div>
+
+        <div data-ng-controller="controlador02">
+            Nombre: {{ nombre }}
+        </div>
+        <hr>
+
+        <script>
+            var miAplicacion = angular.module("nombreApp",[]);
+            miAplicacion.controller('controlador01',['$scope',function($scope){
+                $scope.nombre = "Julio";
+            }]);
+
+            miAplicacion.controller('controlador02',['$scope',function($scope){
+                $scope.nombre = "Isidro";
+            }]);
+        </script>
+    </body>
+</html>

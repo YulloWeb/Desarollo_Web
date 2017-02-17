@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es" data-ng-app>
+    <head>
+        <title>Data Binding</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+    </head>
+    <body>
+        <!-- 
+            En AngularJS, un modelo es donde se almacena información
+
+            Data Binding = Enlace de datos en tiempo real  
+        
+        -->
+
+        <label for="Nombre"> Nombre </label>
+        <input type="text" name="Nombre" value="Nombre" data-ng-model="nombre">
+
+        <div class="tarjeta" >
+            <h1>Mi nombre es: {{ nombre }}</h1>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es" data-ng-app="app">
+    <head>
+        <title>Mostrar y ocultar elementos</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>
+    </head>
+    <body>
+        <div data-ng-controller="controlador01">
+            <button data-ng-click="mostrar()">Revelar el secreto</button>
+            <button data-ng-click="ocultar()">Volver al misterio</button>
+            <div class="alerta" data-ng-show="visibilidadMensaje">
+                Esto es un mensaje secreto
+            </div>
+        </div>
+
+        <script>
+            var miApp = angular.module('app',[]);
+            miApp.controller('controlador01',['$scope', function($scope){
+                $scope.visibilidadMensaje = false;
+                $scope.mostrar = function(){
+                    $scope.visibilidadMensaje = true;
+                };
+                $scope.ocultar = function(){
+                    $scope.visibilidadMensaje = false;
+                };
+            }]);           
+        </script>
+    </body>
+</html>

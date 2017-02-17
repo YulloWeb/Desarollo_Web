@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es" data-ng-app="accion">
+    <head>
+        <title>Representar colecciones de datos</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js">
+            
+        </script>
+    </head>
+    <body>
+        <div data-ng-controller="controlador01">
+            
+            <h1>Nombres</h1>
+            <ul>
+                <li data-ng-repeat="nombreIndividual in nombresSimples">
+                    {{nombreIndividual}}
+                </li>
+            </ul>
+
+            <h1>Personas populares</h1>
+            <ul>
+                <li data-ng-repeat="heroe in heroes">
+                    {{ heroe.nombre }} {{ heroe.apellido }}
+                </li>
+            </ul>
+        </div>
+
+        <script>
+            var miAplicacion = angular.module('accion',[]);
+            miAplicacion.controller('controlador01', ['$scope', function($scope){
+                $scope.nombresSimples = ["Alois", "Gardenzio","Carlos"];
+
+                $scope.heroes = [
+                    {
+                        nombre : "Julio",
+                        apellido : "Isidro"
+                    },
+                    {
+                        nombre : "Victor",
+                        apellido : "Perez"
+                    },
+                      {
+                        nombre : "Jesus",
+                        apellido : "Sanchez"
+                    }
+                ];
+            }]);
+        </script>
+    </body>
+</html>

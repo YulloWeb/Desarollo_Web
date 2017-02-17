@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es" data-ng-app="includes">
+
+    <head>
+        <title>Incluir datos externos</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>
+
+        <!-- Routing AngularJS -->
+        <script src="https://code.angularjs.org/1.6.1/angular-route.min.js"></script>
+
+        <style>
+            body{
+                font-family: Arial;
+            }
+            header{
+                height: 80px;
+                background: #FFFF00;
+                text-align: center;
+                line-height: 50px;
+                font-size: 40px;
+            }
+            ul, li {
+                margin: 0;
+                padding: 0;
+            }
+            h1{
+                margin-top: 50px;
+            }
+            li{
+                list-style-type: none;
+                background: #000;
+                float: left;
+                height: 30px;
+                width: 25%;
+                text-align: center;
+            }
+            li a{
+                color: #FFF;
+                text-decoration: none;
+                line-height: 30px;
+            }
+        </style>
+    </head>
+    <body>
+        <div data-ng-include src=" 'encabezado.html' ">
+            
+        </div>
+        <div data-ng-include src=" 'menu.html' "></div>
+        <h1>Visita el NG-ZOO</h1>
+
+        <script>
+            var miApp = angular.module('includes',[]);
+        </script>
+    </body>
+</html>

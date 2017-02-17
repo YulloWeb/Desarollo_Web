@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es" data-ng-app="zooApp">
+
+    <head>
+        <title>Administrar rutas</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>
+
+        <!-- Routing AngularJS -->
+        <script src="https://code.angularjs.org/1.6.1/angular-route.min.js"></script>
+
+        <style>
+            body{
+                font-family: Arial;
+            }
+            header{
+                height: 80px;
+                background: #FFFF00;
+                text-align: center;
+                line-height: 50px;
+                font-size: 40px;
+            }
+            ul, li {
+                margin: 0;
+                padding: 0;
+            }
+            h1{
+                margin-top: 50px;
+            }
+            li{
+                list-style-type: none;
+                background: #000;
+                float: left;
+                height: 30px;
+                width: 25%;
+                text-align: center;
+            }
+            li a{
+                color: #FFF;
+                text-decoration: none;
+                line-height: 30px;
+            }
+            .menu{
+
+            }
+            .menu li{
+                width: 100px;
+                background: #666;
+            }
+        </style>
+    </head>
+    <body>
+        <div data-ng-include src=" 'encabezado.html' ">
+            
+        </div>
+        <div data-ng-include src=" 'menu.html' "></div>
+        <h1>Visita el NG-ZOO</h1>
+
+        <!-- Carga la configuración de AngularJS-->
+        <div data-ng-view></div>
+
+        <ul class="menu">
+            <li><a href="imagen01"> Imagen 01 </a></li>
+            <li><a href="imagen02"> Imagen 02 </a></li>
+        </ul>
+        <script>
+        //Inyectar dependencia (ngRoute)
+        var zoo = angular.module('zooApp',['ngRoute']);
+
+        //Modificar la configuración de AngularJS
+        //routeProvider = Modifica la ruta del docucumento
+
+        // Parametros 
+        // 1.- Servicio 
+        // 2.- Función
+
+        zoo.config([ '$routeProvider',function($routeProvider){
+            //"when" revisa la ruta con una condición, 
+            //en caso que no la cumpla se ejecuta "otherwise"
+            $routeProvider.when('/hola',{
+                //Código si cumple la condición
+                templateUrl : 'hola.html'
+            }).when('/imagen01',{
+                templateUrl : 'imagen01.html'
+            }).when('/imagen02',{
+                templateUrl : 'imagen02.html'
+            }).otherwise({
+                //Código si no cumple la condición
+                RedirectTo : '/',
+                templateUrl : 'inicio.html'
+            });
+        } ]);
+            
+
+
+        </script>
+    </body>
+</html>
