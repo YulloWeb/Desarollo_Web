@@ -1,0 +1,13 @@
+.container{
+	background-color: gray;
+}
+.full-width{
+	width: 100%;
+	color: #FFF;
+	background-color: #400080;
+	padding: 20px;
+}
+.full-width-extra{
+	color: #000;
+	background-color: #FC0;
+}

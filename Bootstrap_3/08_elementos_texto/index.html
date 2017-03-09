@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title> Elementos de texto: titulares, parrafos, alineación y otros </title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    
+      <!-- Contenedor -->
+      <div class="container">
+      <!-- Fila -->
+        <div class="row">
+          <div class="col-xs-12">
+            <h1>Titular 1</h1>
+            <h2>Titular 2</h2>
+            <h3>Titular 3</h3>
+            <h4>Titular 4</h4>
+            <h5>Titular 5</h5>
+            <h6>Titular 6</h6>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+            <h1>Titular <small>con texto secundario</small></h1>
+
+            <p class="lead">Párrafo destacado con <code>.lead</code>: <em>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</em></p>
+
+            <blockquote class="blockquote-reverse">
+              <p>Texto destacado con blockquote</p>
+
+              <footer>
+                Con efectos adicionales como un footer o alineación con <code>.blockquote-reverse</code>
+              </footer>
+            </blockquote>
+
+            <p class="text-left">
+              Alineamiento a la izquierda con <code>.text-left</code>
+            </p>
+
+            <p class="text-right">
+              Alineamiento a la derecha con <code>.text-right</code>
+            </p>
+
+            <p class="text-center">
+              Alineamiento centrado con <code>.text-center</code>
+            </p>
+
+            <p class="text-justify">E incluso alineamiento justificado mediante la clase <code>.text-justify</code> que requiere de textos más extensos para poder apreciarse correctamente su efecto sobre un párrafo.</p>        
+
+            <p>Formato propio para direcciones:</p>
+            <address> <strong>Julio Isaac</strong><br>
+                   Calle vivienda, 1 2º<br>
+                   Ciudad, CP008<br>
+                   <abbr title="teléfono">t.</abbr> (+34) 999 888 777
+            </address>
+          </div>
+
+           <div class="row">
+            <div class="col-xs-12 col-sm-6">
+              <p>Tiene soporte para <abbr title="esto es una explicación">abreviaturas</abbr> mediante la etiqueta <pre>&lt;abbr&gt;</pre></p>          
+            </div>
+            <div class="col-xs-12 col-sm-6">
+              <p>E incluso un formato para representar entradas de teclado del usuario como <kbd>Ctrl+E</kbd> mediante la etiqueta <pre>&lt;kbd&gt;</pre></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
