@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Formularios</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+        
+    <div class="container">      
+        <div class="row">
+          <div class="col-xs-12">          
+            
+            <form role="form" class="form-horizontal" action="">
+            <!-- Validación de formulario con icono -->
+              <div class="form-group has-success has-feedback">
+                <label for="username" class="control-label col-xs-3">Nombre de usuario</label>
+                <div class="col-xs-9">
+                  <input id="username" type="text" class="form-control">
+                  <!-- Icono de Boostrap -->
+                  <span class="glyphicon glyphicon-ok form-control-feedback"></span>
+                  
+                </div>
+              </div>
+              
+              <div class="form-group">
+                <label for="email" class="control-label col-xs-3">E-mail</label>
+                <div class="col-xs-9">
+                  <!-- Deshabilita el input -->
+                  <input id="email" type="text" class="form-control" disabled>
+                  <!-- Muestra texto explicativo -->
+                  <span class="help-block">Este es un texto de ayuda que se muestra debajo del input, como en este que está desactivado.</span>
+                </div>
+              </div>             
+
+              <div class="form-group">
+                <label for="detalle" class="control-label col-xs-3">Detalle</label>
+                <div class="col-xs-9">
+                  <textarea id="detalle" class="form-control" rows="10"></textarea>
+                </div>
+              </div>
+
+               <div class="form-group has-error has-feedback">
+                <label for="passwd" class="control-label col-xs-3">Contraseña</label>
+                <div class="col-xs-9">
+                  <input id="passwd" type="password" class="form-control">
+                  <span class="glyphicon glyphicon-remove form-control-feedback"></span>
+                </div>
+              </div>
+
+            </form>
+
+          </div>
+        </div>
+      </div>    
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>

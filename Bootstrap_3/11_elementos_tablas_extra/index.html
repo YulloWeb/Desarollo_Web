@@ -1,0 +1,70 @@
+  <!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tablas: efectos básicos</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- <link rel="stylesheet" type="text/css" href="css/style.css"> -->
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <h4>Tabla con efectos adicionales</h4>        
+          <table class="table table-hover text-success ">
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Nombre</th>
+                <th>Apellido</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="bg-success">
+                <td>1</td>
+                <td>Marcos</td>
+                <td>González</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Pedro</td>
+                <td>Picapiedra</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Pablo</td>
+                <td>Mármol</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <p>Adicionalmente se pueden aplicar las clases contextuales de Bootstrap como a algunos otros elementos: </p>
+          <ul class="list-unstyled">
+            <li class="text-active bg-active">.active</li>
+            <li class="text-success bg-success">.success</li>
+            <li class="text-info bg-info">.info</li>
+            <li class="text-warning bg-warning">.warning</li>
+            <li class="text-danger bg-danger">.danger</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
