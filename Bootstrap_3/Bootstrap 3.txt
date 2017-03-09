@@ -1,0 +1,37 @@
+/*** ¿Qué es Bootstrap 3? ***/
+- Framework para el desarrollo Front-end 
+- Código abierto
+- Creado por dos empleados de Twitter 
+- Implementa Reponsive Web Design 
+- Usa la filosofia Mobile First
+- Compatibilidad con navegadores --> http://getbootstrap.com/getting-started/#support
+
+/*** Principales partes de Bootstrap ***/
+- Sistema de rejillas
+- Conjunto de estilos CSS
+- Componentes 
+- Interactividad con Plugins 
+
+/*** Beneficios al usar Bootstrap ***/
+- Aplicación desde la fase de diseño 
+- Compatibilidad con navegadores modernos, dispoditivos y navegadores antiguos (IE8)
+- Comportamiento unificado en diferentes navegadores
+- Soporte avanzado para RWD (Responsive Web Design)
+- Componentes de interfaz de usuarios listos para usar
+- Comportamientos y plugins basados en jQuery muy útiles y habituales
+- Agilidad durante el desarrollo 
+
+/*** Otros componentes de navegación ***/
+- Barras de navegación 
+- Input groups
+- Labels
+- Badges
+- Jumbotron
+- Page header
+- Thumbnails
+- Alerts
+- Progress bars
+- Media objects
+- List group
+- Panels
+- Wells
